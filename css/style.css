@@ -30,7 +30,6 @@ body{
 
 /* TOP SIDEBAR SECTION  */
 .top-side{
-    height: 18%;
     width: 100%;
     background-color: #F0F2F5;
     justify-content: space-between;
@@ -62,7 +61,7 @@ body{
     margin-left: 15px;
 }
 
-#circle{
+.circle{
     background-color: white;
     border-radius: 50%;
     padding: 10px;
@@ -87,7 +86,6 @@ body{
 /* MIDDLE SIDEBAR */
 
 .middle-side{
-    height: 7%;
     width: 100%;
 }
 
@@ -97,7 +95,6 @@ body{
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden;
 }
   
 .search-input {
@@ -133,6 +130,11 @@ body{
     height: 80px;
 }
 
+.contact_img{
+    width: 15%;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 
 
