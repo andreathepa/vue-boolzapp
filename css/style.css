@@ -160,6 +160,10 @@ body{
     font-size: 12px;
 }
 
+.text_contact_chat{
+    cursor: pointer;
+}
+
 
 
 
@@ -174,14 +178,44 @@ body{
 
 
 .top-main, .bottom-main{
-    height: 9%;
     width: 100%;
     background-color: #F0F2F5;
+    height: 75px;
 }
 
 .middle-main{
-    height: 82%;
+    height: calc(100% - 150px);
     width: 100%;
     background-image: url(../img/mine.jpg);
 
 }
+
+
+.contact_chat_img{
+    width: 15%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.contact_icons{
+    padding-top: 15px;
+}
+
+.search-bar-message {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.content_bar{
+    cursor: pointer;
+}
+  
