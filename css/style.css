@@ -84,6 +84,8 @@ body{
 
 /* END TOP SIDEBAR */
 
+/* MIDDLE SIDEBAR */
+
 .middle-side{
     height: 7%;
     width: 100%;
@@ -114,9 +116,21 @@ body{
     background-color: white;
 }
 
+/* END MIDDLE SIDEBAR */
+
+
+
+/* BOTTOM SIDEBAR */
+
 .bottom-side{
     height: 75%;
     width: 100%;
+    overflow-y: auto;
+}
+
+.contacts{
+    border: 1px solid red;
+    height: 80px;
 }
 
 
