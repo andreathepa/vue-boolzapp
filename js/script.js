@@ -10,5 +10,8 @@ createApp({
 
       }
     },
+    methods: {
+
+    }
     
   }).mount('#app');
