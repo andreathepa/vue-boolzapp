@@ -10,42 +10,112 @@ body{
     height: 100vh;
 }
 
-.border_temp{
-    height: 90vh;
-    border: 1px solid red;
-    margin-top: 30px;
-}
+
 
 .container{
     display: flex;
     margin-top: 40px;
 }
 
+/* SIDEBAR SECTION */
 .sidebar{
     width: 400px;
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: red;
+    background-color: white;
     border: 0.5px solid rgb(201, 201, 201);
 }
 
+/* TOP SIDEBAR SECTION  */
 .top-side{
-    height: 20%;
+    height: 18%;
     width: 100%;
     background-color: #F0F2F5;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.middle-side{
-    height: 10%;
-    width: 100%;
-    background-color: yellow;
+.pointer{
+    cursor: pointer;
+}
 
+
+.user_img{
+    width: 25%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#user_icons{
+    padding-top: 15px;
+}
+
+#notifiche{
+    background-color: rgb(63, 183, 253);
+}
+
+.bell{
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#circle{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+#text_notifiche{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#sub_text_notifiche{
+    font-size: 15px;
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+}
+
+
+/* END TOP SIDEBAR */
+
+.middle-side{
+    height: 7%;
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+  
+.search-button {
+    border: none;
+    color: #494949;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
 }
 
 .bottom-side{
-    height: 70%;
+    height: 75%;
     width: 100%;
 }
 
@@ -54,7 +124,7 @@ body{
 
 
 
-
+/* MAIN CONTENT SECTION */
 
 
 .main-content{
@@ -64,13 +134,13 @@ body{
 
 
 .top-main, .bottom-main{
-    height: 10%;
+    height: 9%;
     width: 100%;
     background-color: #F0F2F5;
 }
 
 .middle-main{
-    height: 80%;
+    height: 82%;
     width: 100%;
     background-image: url(../img/mine.jpg);
 
