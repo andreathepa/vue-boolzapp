@@ -126,15 +126,38 @@ body{
 }
 
 .contact{
-    border: 1px solid red;
     display: flex;
     align-content: center;
+    cursor: pointer;
 }
 
+.contact-photo{
+    width: 25%;
+}
+
+.data_contact{
+    width: 75%;
+}
 .contact_img{
-    width: 15%;
+    width: 55%;
     border-radius: 50%;
     cursor: pointer;
+    margin-left: 10px;
+}
+
+.contact:hover {
+    background-color: rgb(245, 245, 245);
+  }
+
+
+.status{
+    font-size: 15px;
+    color: lightgray;
+}
+
+.time_contact{
+    color: lightgray;
+    font-size: 12px;
 }
 
 
