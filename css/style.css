@@ -125,9 +125,10 @@ body{
     overflow-y: auto;
 }
 
-.contacts{
+.contact{
     border: 1px solid red;
-    height: 80px;
+    display: flex;
+    align-content: center;
 }
 
 .contact_img{
