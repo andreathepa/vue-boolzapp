@@ -81,17 +81,17 @@
 
                 <!-- bottom side - contacts -->
                 <div class="bottom-side">
-                    <div class="contact p-2">
+                    <div v-for="(contact, index) in contacts" class="contact p-2">
                         <div class="contact-photo">
-                            <img src="./img/avatar_1.jpg" class="contact_img" alt="">
+                            <img :src="contact.avatar" class="contact_img" alt="">
                         </div>
                         <div class="data_contact">
-                            <div class="name_contact">Michele</div>
+                            <div class="name_contact">{{contact.name}}</div>
                             <div class="status">Ultimo messaggio inviato</div>
                         </div>
                         <div class="time_contact">12.00</div>
                     </div>
-                    <div class="contact p-2">
+                    <!-- <div class="contact p-2">
                         <div class="contact-photo">
                             <img src="./img/avatar_2.jpg" class="contact_img" alt="">
                         </div>
@@ -160,7 +160,7 @@
                             <div class="status">Ultimo messaggio inviato</div>
                         </div>
                         <div class="time_contact">12.00</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -170,18 +170,21 @@
                 <div class="top-main p-1">
                     <div class="contact_chat" class="p-2">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-8">
+                                <div class="content">
+
+                                    <div class="photo_contact_chat p-2 d-flex">
+                                        <img src="./img/avatar_1.jpg" class="contact_chat_img" alt="">
+                                        <div class="text_contact_chat">
+                                            <div>Michele</div>
+                                            <div class="status">Ultimo accesso oggi alle 12.00</div>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
 
                                 <!-- photo contact chat -->
-                                <div class="photo_contact_chat p-2 d-flex">
-                                    <img src="./img/avatar_1.jpg" class="contact_chat_img" alt="">
-                                    <div class="text_contact_chat">
-                                        <div>Michele</div>
-                                        <div class="status">Ultimo accesso oggi alle 12.00</div>
-
-                                    </div>
-
-                                </div>
 
                             </div>
                             <div class="col">
@@ -204,34 +207,17 @@
                     </div>
                 </div>
                 <div class="middle-main">
-                    <div>
 
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
                 </div>
-                <div class="bottom-main pt-3">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <div class="content_bar d-flex ">
-                                <i class="fa-regular fa-face-smile mx-2"></i>
-                            </div>
-                        </div>
-                        <div class="col-10">
-                            <div class="search-bar-message">
-                                <input type="text" placeholder="Scrivi un messaggio" class="search-input">
-                            </div>
-
-                        </div>
-                        <div class="col">
-                            <div class="content_bar">
-                                <i class="fa-solid fa-microphone"></i>
-                            </div>
-                        </div>
+                <div class="bottom-main pt-3 d-flex justify-content-around align-items-center">
+                    <div class="content_bar">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <div class="search-bar-message">
+                        <input type="text" placeholder="Scrivi un messaggio" class="search-input">
+                    </div>
+                    <div class="content_bar">
+                        <i class="fa-solid fa-microphone"></i>
                     </div>
                 </div>
             </div>
