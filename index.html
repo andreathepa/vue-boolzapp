@@ -147,8 +147,8 @@
                     </div>
                 </div>
 
-                <div class="middle-main d-flex flex-column">
-                    <div v-for="(message, index) in contacts[active_avatar].messages" :class="contacts[active_avatar].messages[index].status === 'sent' ? 'inviato' : 'ricevuto'" class="message-container mt-5 my-2 mx-5 d-flex">
+                <div class="middle-main d-flex flex-column p-4">
+                    <div v-for="(message, index) in contacts[active_avatar].messages" :class="contacts[active_avatar].messages[index].status === 'sent' ? 'inviato' : 'ricevuto'" class="message-container mx-5 d-flex">
                         <div>
                             <div class="message_text">{{ message.message }}</div>
                             <div class="message_time ">{{ message.date }}</div> 

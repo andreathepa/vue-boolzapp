@@ -232,9 +232,11 @@ body{
 .inviato, .ricevuto{
     padding: 15px;
     border-radius: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
+    /* word-wrap: break-word;
+    word-break: break-all; */
     position: relative;
+    width: 40%;
+    margin-bottom: 10px;
 
 
 }
