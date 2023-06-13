@@ -228,30 +228,25 @@ body{
 
 /* middle main content */
 
-.message-container{
-    width: 35%;
-    position: relative;
-}
 
 .inviato, .ricevuto{
     padding: 15px;
     border-radius: 10px;
-    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
 
 
 }
 
 .inviato{
     background-color: lightgreen;
-    top: 20px;
-    left: 170px;
-
+    align-self: end;
 }
 
 .ricevuto{
     background-color: white;
-    top: 60px;
-    right: 170px;
+    align-self: flex-start;
+    
 }
 
 .message_time{

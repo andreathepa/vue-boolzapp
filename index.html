@@ -146,16 +146,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div v-for="(message, index) in messages" class="middle-main d-flex justify-content-center align-items-start align-content-center"></div> -->
-                <div class="middle-main d-flex justify-content-center align-items-start align-content-center">
-                    <div class="message-container mt-5">
-                        <div class="inviato">
-                            <div class="message_text">Come stai?</div>
+
+                <div class="middle-main d-flex flex-column">
+                    <div v-for="(message, index) in contacts[active_avatar].messages" :class="contacts[active_avatar].messages[index].status === 'sent' ? 'inviato' : 'ricevuto'" class="message-container my-2 mx-5 d-flex">
+                        <div>
+                            <div class="message_text">{{ message.message }}</div>
                             <div class="message_time ">12.00</div> 
-                        </div>
-                        <div class="ricevuto">
-                            <div class="message_text">Bene grazie</div>
-                            <div class="message_time">12.02</div> 
                         </div>
                     </div>
                 </div>
