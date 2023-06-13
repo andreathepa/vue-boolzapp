@@ -190,6 +190,8 @@ body{
 
 }
 
+/* top - bottom main content */
+
 
 .contact_chat_img{
     width: 50px;
@@ -223,4 +225,39 @@ body{
     border: 1px solid red;
 }
 
-  
+
+/* middle main content */
+
+.message-container{
+    width: 35%;
+    position: relative;
+}
+
+.inviato, .ricevuto{
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+
+.inviato{
+    background-color: lightgreen;
+    top: 20px;
+    left: 170px;
+
+}
+
+.ricevuto{
+    background-color: white;
+    top: 60px;
+    right: 170px;
+}
+
+.message_time{
+    color: grey;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px
+}
