@@ -189,7 +189,19 @@ createApp({
 
         this.new_messages = '';
 
+        setTimeout(()=>{
+          let obj = {
+              date: '',
+              message: 'ok',
+              status: 'received',
+          }
+
+          this.contacts[this.active_avatar].messages.push(obj);
+
+      },1000);
+       
       }
+    
     }
     
   }).mount('#app');
