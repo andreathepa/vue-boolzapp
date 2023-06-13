@@ -175,7 +175,9 @@ createApp({
       }
     },
     methods: {
-
+      changeChat(index){
+        this.active_avatar = index;
+      }
     }
     
   }).mount('#app');

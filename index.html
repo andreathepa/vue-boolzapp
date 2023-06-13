@@ -81,11 +81,16 @@
 
                 <!-- bottom side - contacts -->
                 <div class="bottom-side">
-                    <div v-for="(contact, index) in contacts" class="contact p-2">
+
+                    <!-- 1. ho creato un ciclo for per ciclare gli elementi dell'array  -->
+                    <!-- 6. ho aggiunto il click per cambiare la chat del personaggio -->
+                    <div v-for="(contact, index) in contacts" @click="changeChat(index)" class="contact p-2">
                         <div class="contact-photo">
+                            <!-- 2. Ho assegnato questa funzione per far ciclare le immagini degli avatar -->
                             <img :src="contact.avatar" class="contact_img" alt="">
                         </div>
                         <div class="data_contact">
+                            <!-- 3. Ho richiamato tramite l'indice contact il name del'array -->
                             <div class="name_contact">{{contact.name}}</div>
                             <div class="status">Ultimo messaggio inviato</div>
                         </div>
@@ -174,9 +179,13 @@
                                 <div class="content">
 
                                     <div class="photo_contact_chat p-2 d-flex">
-                                        <img src="./img/avatar_1.jpg" class="contact_chat_img" alt="">
+
+                                        <!-- 4. Ho richiamato l'intero ciclo per visualizzare l'immagine dell'avatar -->
+                                        <img :src="contacts[active_avatar].avatar" class="contact_chat_img" alt="">
                                         <div class="text_contact_chat">
-                                            <div>Michele</div>
+
+                                            <!-- 5. ho richiamato l'intero ciclo per visualizzare il nome -->
+                                            <div class="name_contact">{{contacts[active_avatar].name}}</div>
                                             <div class="status">Ultimo accesso oggi alle 12.00</div>
     
                                         </div>
