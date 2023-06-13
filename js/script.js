@@ -4,6 +4,7 @@ createApp({
     data() {
       return{
         active_avatar: 0,
+        new_messages: [],
         contacts: [
           {
               name: 'Michele',
@@ -177,6 +178,17 @@ createApp({
     methods: {
       changeChat(index){
         this.active_avatar = index;
+      },
+      addMessage(){
+        let obj = {
+          message: this.new_messages,
+          status: 'sent'
+        }
+
+        this.contacts[this.active_avatar].messages.push(obj);
+
+        this.new_messages = '';
+
       }
     }
     

@@ -160,9 +160,17 @@
                     <div class="content_bar">
                         <i class="fa-regular fa-face-smile"></i>
                     </div>
+
+
                     <div class="search-bar-message">
-                        <input type="text" placeholder="Scrivi un messaggio" class="search-input">
+                        <input type="text" placeholder="Scrivi un messaggio" class="search-input" v-model="new_messages" @keyup.enter="addMessage(active_avatar)">
+                        <button class="btn btn-sm" @click="addMessage(active_avatar)">
+                            <i class="fas"></i>
+                        </button>
                     </div>
+
+
+
                     <div class="content_bar">
                         <i class="fa-solid fa-microphone"></i>
                     </div>
