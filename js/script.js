@@ -5,6 +5,7 @@ createApp({
       return{
         active_avatar: 0,
         new_messages: [],
+        search_contact: '',
         contacts: [
           {
               name: 'Michele',
@@ -179,6 +180,8 @@ createApp({
       changeChat(index){
         this.active_avatar = index;
       },
+
+      //aggiungo il messaggio digitando nella type bar
       addMessage(){
         let obj = {
           message: this.new_messages,
@@ -188,6 +191,8 @@ createApp({
         this.contacts[this.active_avatar].messages.push(obj);
 
         this.new_messages = '';
+
+        //aggiungo la risposta automatica
 
         setTimeout(()=>{
           let obj = {
@@ -200,7 +205,26 @@ createApp({
 
       },1000);
        
-      }
+      },
+
+      findContact(){
+            
+            search_contact = this.searchText
+            
+            for(let i = 0; i <this.contacts.length; i++ ) {
+
+                let contact = this.contacts[i];
+                if(contact.name.contains(search_contact)){
+                    contact.visible=true;
+                }
+                else{
+                    contact.visible=false;
+                }
+
+            }
+        }
+
+
     
     }
     
