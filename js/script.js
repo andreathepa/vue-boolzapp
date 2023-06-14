@@ -255,7 +255,7 @@ createApp({
         setTimeout(()=>{
           let obj = {
               date: '',
-              message: 'ok',
+              message: 'Non posso risponderti, ci sentiamo dopo',
               status: 'received',
           }
 
