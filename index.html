@@ -69,13 +69,13 @@
 
                 </div>
 
-                <!-- mmiddle side sidebar - search bar -->
+                <!-- MIDDLE SIDEBAR - SEARCHBAR CONTACTS -->
                 <div class="middle-side p-1 d-flex">
                     <div class="search-bar">
                         <button class="search-button">
                             <i class="fa fa-search "></i>
                         </button>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchText" class="search-input">
+                        <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchText" @input="findContact()" class="search-input">
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@
 
                     <!-- 1. ho creato un ciclo for per ciclare gli elementi dell'array  -->
                     <!-- 6. ho aggiunto il click per cambiare la chat del personaggio -->
-                    <div v-for="(contact, index) in contacts" @click="changeChat(index)" class="contact p-2">
+                    <div  class="contact p-2" v-for="(contact, index) in contacts" @click="changeChat(index)" :class="contact.visible ? '' : 'hidden'">
                         <div class="contact-photo">
                             <!-- 2. Ho assegnato questa funzione per far ciclare le immagini degli avatar -->
                             <img :src="contact.avatar" class="contact_img" alt="">

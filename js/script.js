@@ -267,12 +267,12 @@ createApp({
 
       findContact(){
             
-            search_contact = this.searchText
+            search_contact = this.searchText.toLowerCase()
             
             for(let i = 0; i <this.contacts.length; i++ ) {
 
                 let contact = this.contacts[i];
-                if(contact.name.contains(search_contact)){
+                if(contact.name.toLowerCase().includes(search_contact)){
                     contact.visible=true;
                 }
                 else{
