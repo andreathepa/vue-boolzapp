@@ -204,7 +204,7 @@ body{
     padding-top: 15px;
 }
 
-.search-bar-message {
+.type-bar-message {
     display: flex;
     align-items: center;
     width: 80%;
@@ -264,3 +264,4 @@ body{
 .hidden{
     display: none;
 }
+
