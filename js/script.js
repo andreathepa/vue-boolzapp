@@ -6,6 +6,7 @@ createApp({
         active_avatar: 0,
         new_messages: [],
         search_contact: '',
+        selectedContact: null,
         contacts: [
           {
               name: 'Michele',
@@ -237,9 +238,16 @@ createApp({
     methods: {
       changeChat(index){
         this.active_avatar = index;
+        this.selectedContact = index;
+
+        if (this.selectedContact !== null) {
+            this.new_messages = '';
+          }
+
       },
 
       //aggiungo il messaggio digitando nella type bar
+      
       addMessage(){
         let obj = {
           message: this.new_messages,
@@ -267,8 +275,9 @@ createApp({
 
       findContact(){
             
-            search_contact = this.searchText.toLowerCase()
-            
+            this.search_contact = this.searchText.toLowerCase();
+
+                        
             for(let i = 0; i <this.contacts.length; i++ ) {
 
                 let contact = this.contacts[i];
